@@ -1,36 +1,23 @@
 import self from "../img/self.png"
 import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
 
-/* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
-how to make this template work best for you! */
+//["rgb(0,255,164)", "rgb(166,104,255)"];
 
-export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
-/*
-I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
-These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
-the site.
- */
+export let colors = ["rgb(255, 136, 0)", "rgb(57, 24, 220)"];
+
 
 /* 
 This variable will change the layout of the website from multipage to single, scrollable page
 */
 export let singlePage = false;
 
-/*
-So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
-that might not be obvious right off the bat :) I recommend looking at the template example live using "npm start" to get an idea
-of what each of the values mean.
- */
 
 export const info = {
-    firstName: "John",
-    lastName: "Smith",
-    initials: "js", // the example uses first and last, but feel free to use three or more if you like.
-    position: "a Full Stack Developer",
+    firstName: "Mishka",
+    lastName: "Ismail",
+    initials: "mi", // the example uses first and last, but feel free to use three or more if you like.
+    position: "a Full Stack Web Developer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
@@ -40,63 +27,54 @@ export const info = {
             text: 'fueled by coffee'
         },
         {
-            emoji: '🌎',
-            text: 'based in the US'
+            emoji: '🌍',
+            text: 'based in Cape Town, SA'
         },
         {
-            emoji: "💼",
-            text: "Systems Engineer at Google"
+            emoji: "💻",
+            text: "sr. customer experience associate at SnapScan"
         },
         {
-            emoji: "📧",
-            text: "johnsmith@gmail.com"
+            emoji: "✉️",
+            text: "let's get in touch!"
         }
     ],
     socials: [
         {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
-            link: "https://instagram.com",
+            link: "https://www.instagram.com/ig_mxshka/",
             icon: 'fa fa-instagram',
             label: 'instagram'
         },
         {
-            link: "https://github.com",
+            link: "https://github.com/Mishismail",
             icon: "fa fa-github",
             label: 'github'
         },
         {
-            link: "https://linkedin.com",
+            link: "https://www.linkedin.com/in/mishkaismail/",
             icon: "fa fa-linkedin",
             label: 'linkedin'
-        },
-        {
-            link: "https://twitter.com",
-            icon: "fa fa-twitter",
-            label: 'twitter'
         }
+
 // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Heyo! I'm Mishka. I'm a senior customer experience associate at SnapScan. I studied Business Administration at UWC. I enjoy the small, mundane things in life, and I believe artificial intelligence will inevitably rule us all one day.",
     skills:
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
+            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma', 'mongoDB', 'node.js', 'express.js', 'mongoose', 'heroku', 'netlify', 'vs code', 'postman', 'slack', 'shopify'],
+            exposedTo: ['python', 'google cloud', 'c#', 'wordpress']
         }
     ,
     hobbies: [
         {
-            label: 'reading',
-            emoji: '📖'
+            label: 'road trips',
+            emoji: '🏔️'
         },
         {
-            label: 'theater',
-            emoji: '🎭'
+            label: 'walks on the beach',
+            emoji: '🏖'
         },
         {
             label: 'movies',
@@ -106,39 +84,20 @@ export const info = {
             label: 'cooking',
             emoji: '🌶'
         }
-// Same as above, change the emojis to match / relate to your hobbies or interests.
-// You can also remove the emojis if you'd like, I just think they look cute :P
+
     ],
-    portfolio: [ // This is where your portfolio projects will be detailed
+    portfolio: [ 
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+            title: "Weather",
+            live: "https://mishweatherapp.netlify.app/", 
+            source: "https://github.com/Mishismail/react-weather-app",
             image: mock1
         },
         {
-            title: "Project 2",
+            title: "Quiz App",
             live: "https://paytonpierce.dev",
             source: "https://github.com/paytonjewell",
             image: mock2
         },
-        {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock3
-        },
-        {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock4
-        },
-        {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5
-        }
     ]
 }
