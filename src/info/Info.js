@@ -1,6 +1,7 @@
 import self from "../img/self.png"
 import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
+import mock3 from "../img/mock3.png"
 
 //["rgb(0,255,164)", "rgb(166,104,255)"];
 
@@ -56,15 +57,14 @@ export const info = {
             label: 'linkedin'
         }
 
-// Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-// Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Heyo! I'm Mishka. I'm a senior customer experience associate at SnapScan. I studied Business Administration at UWC. I enjoy the small, mundane things in life, and I believe artificial intelligence will inevitably rule us all one day.",
+    bio: "Heyo! I'm Mishka🌟 Passionate about problem-solving and technology, I'm transitioning from a Senior Customer Experience role to the dynamic field of Full Stack Development 💻✨ With a solid background in delivering exceptional customer experiences, I'm now combining my expertise in customer support with my technical skills in the MERN stack. 🚀🔧",
     skills:
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma', 'mongoDB', 'node.js', 'express.js', 'mongoose', 'heroku', 'netlify', 'vs code', 'postman', 'slack', 'shopify'],
-            exposedTo: ['python', 'google cloud', 'c#', 'wordpress']
+            theObvious: ['html', 'CSS', 'javascript', 'git', 'npm / yarn', 'rest APIs / json', , 'react hooks', 'fetch / axios'],
+            libraryFrameworks: ['react 18', 'nextJS 14', 'tailwind', 'materialui', 'ant design', 'jest', 'redux'],
+            techStack: ['MERN stack', 'MongoDB', 'express', 'react', 'nodejs', 'heroku', 'netlify', 'vercel']
         }
     ,
     hobbies: [
@@ -88,16 +88,23 @@ export const info = {
     ],
     portfolio: [ 
         {
-            title: "Weather",
+            title: "The Weather",
             live: "https://mishweatherapp.netlify.app/", 
             source: "https://github.com/Mishismail/react-weather-app",
             image: mock1
         },
         {
-            title: "Quiz App",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            title: "Quiz Wizz",
+            live: "https://quiz-wizz.netlify.app/",
+            source: "https://github.com/Mishismail/quiz-app",
             image: mock2
         },
+        {
+            title: "Digital Clock",
+            live: "https://digital-clock-mu-swart.vercel.app/",
+            source: "https://github.com/Mishismail/digital-clock",
+            image: mock3
+        },
+        
     ]
 }
