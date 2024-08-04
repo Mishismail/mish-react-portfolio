@@ -1,7 +1,5 @@
 # React Portfolio: Multiple Pages with Dark Mode
 
-## A Portfolio for Developers
-
 ## Features
 
 - 🌑 Dark Mode Toggler
