@@ -3,26 +3,24 @@ import mock1 from "../img/mock1.png";
 import mock2 from "../img/mock2.png";
 import mock3 from "../img/mock3.png";
 import mock4 from "../img/mock4.png";
+import mock5 from "../img/mock5.png";
 
 export let colors = ["rgb(255, 136, 0)", "rgb(57, 24, 220)"];
 
-/* 
-This variable will change the layout of the website from multipage to single, scrollable page
-*/
 export let singlePage = false;
 
 export const info = {
   firstName: "Mishka",
   lastName: "Ismail",
-  initials: "mi", // the example uses first and last, but feel free to use three or more if you like.
+  initials: "mi", 
   position: "Full Stack Web Developer",
-  selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
-  gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
+  selfPortrait: self, 
+  gradient: `-webkit-linear-gradient(135deg, ${colors})`, 
   baseColor: colors[0],
   miniBio: [
     {
-      emoji: "☕",
-      text: "fueled by coffee",
+      emoji: "👟",
+      text: "sneakerhead",
     },
     {
       emoji: "🌍",
@@ -54,7 +52,7 @@ export const info = {
       label: "linkedin",
     },
   ],
-  bio: "Heyo! I'm Mishka🌟 Passionate about problem-solving and technology, I'm transitioning from a Senior Customer Experience role to the dynamic field of Full Stack Development 💻✨ With a solid background in delivering exceptional customer experiences, I'm now combining my expertise in customer support with my technical skills in the MERN stack. 🚀🔧",
+  bio: "Names Mishka🌟 I'm passionate about problem-solving and technology, and currently transitioning from a Senior Customer Experience role to the dynamic field of Full Stack/Front End Development. With a solid background in delivering exceptional customer experience, I'm now combining my expertise in customer support with my technical skills in the MERN stack. 🚀🔧",
   skills: {
     theObvious: [
       "html",
@@ -106,10 +104,16 @@ export const info = {
   ],
   portfolio: [
     {
-      title: "Weather App",
-      live: "https://mishweatherapp.netlify.app/",
-      source: "https://github.com/Mishismail/react-weather-app",
-      image: mock1,
+      title: "Vital Visit App",
+      live: "https://vitalvisit-doctors-app.vercel.app/",
+      source: "https://github.com/Mishismail/vitalvisit-doctors-app",
+      image: mock4,
+    },
+    {
+      title: "Lexi Creative Assistant",
+      live: "https://lexi-assist.netlify.app/",
+      source: "https://github.com/Mishismail/lexi-creative-assist",
+      image: mock5,
     },
     {
       title: "Quiz Wizz",
@@ -118,16 +122,16 @@ export const info = {
       image: mock2,
     },
     {
+      title: "Weather App",
+      live: "https://mishweatherapp.netlify.app/",
+      source: "https://github.com/Mishismail/react-weather-app",
+      image: mock1,
+    },
+    {
       title: "Alarm Clock",
       live: "https://digital-clock-mu-swart.vercel.app/",
       source: "https://github.com/Mishismail/digital-clock",
       image: mock3,
     },
-    {
-        title: "Vital Visit App",
-        live: "https://vitalvisit-doctors-app.vercel.app/",
-        source: "https://github.com/Mishismail/vitalvisit-doctors-app",
-        image: mock4,
-      },
   ],
 };
