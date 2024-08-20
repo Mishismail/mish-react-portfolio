@@ -9,15 +9,18 @@ export default function About({innerRef}) {
     const firstName = info.firstName.toLowerCase()
 
     function aboutMeText() {
-        return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cat
-                about{firstName} </p>
-            <p><span style={{color: info.baseColor}}>about{firstName} <span
-                className={Style.green}>(main)</span> $ </span>
-                {info.bio}
-            </p>
-        </>;
+        const firstName = info.firstName.toLowerCase();
+    
+        return (
+            <>
+                <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd about{firstName}/ </p>
+                <p><span style={{color: info.baseColor}}>about{firstName} <span
+                    className={Style.green}>(main)</span> $ cat README.md </span></p>
+                <div dangerouslySetInnerHTML={{__html: info.bio}}></div>
+            </>
+        );
     }
+    
 
     function skillsText() {
         return <>

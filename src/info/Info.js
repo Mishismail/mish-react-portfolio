@@ -4,6 +4,8 @@ import mock2 from "../img/mock2.png";
 import mock3 from "../img/mock3.png";
 import mock4 from "../img/mock4.png";
 import mock5 from "../img/mock5.png";
+import mock6 from "../img/mock6.png";
+import resume from '../assets/MishkaIsmailResume_2024.pdf';
 
 export let colors = ["rgb(255, 136, 0)", "rgb(57, 24, 220)"];
 
@@ -20,19 +22,20 @@ export const info = {
   miniBio: [
     {
       emoji: "👟",
-      text: "sneakerhead",
+      text: "Sneaker Enthusiast",
     },
     {
-      emoji: "🌍",
-      text: "based in Cape Town, SA",
+      emoji: "⛰️",
+      text: "Based in Cape Town 🇿🇦",
     },
     {
-      emoji: "💻",
-      text: "sr. customer experience associate at SnapScan",
+      emoji: "🔗",
+      text: "Let's connect 🚀",
     },
     {
-      emoji: "✉️",
-      text: "let's get in touch!",
+      emoji: "📝",
+      linkText: "My resume",  
+      link: resume, 
     },
   ],
   socials: [
@@ -52,7 +55,18 @@ export const info = {
       label: "linkedin",
     },
   ],
-  bio: "Names Mishka🌟 I'm passionate about problem-solving and technology, and currently transitioning from a Senior Customer Experience role to the dynamic field of Full Stack/Front End Development. With a solid background in delivering exceptional customer experience, I'm now combining my expertise in customer support with my technical skills in the MERN stack. 🚀🔧",
+  
+  bio: `<p style="text-align: justify;">
+  Hi there! I'm Mishka, a full-stack web developer from Cape Town, with a deep passion for problem-solving and technology. 
+  After a few years as a Senior Customer Experience associate, I've embarked on an exciting journey into the world of Full Stack and Front-End Development. 
+  My current focus is on mastering the MERN stack, where I've been combining my expertise in delivering top-notch customer experiences with my growing technical skills.
+  </p>
+  <p style="text-align: justify;">
+  I'm dedicated to continuously learning and evolving in this dynamic field, and I'm always exploring new technologies to expand my skill set. 
+  As I progress, I plan to dive deeper into mobile development with React Native and explore other frameworks like Angular and eventually dig into Python.
+  Outside of coding, I enjoy a quiet life where I can focus on honing my craft and relaxing with a bit of Sims 4. 
+  </p>`,
+
   skills: {
     theObvious: [
       "html",
@@ -67,10 +81,15 @@ export const info = {
     libraryFrameworks: [
       "react 18",
       "nextJS 14",
-      "tailwind",
+      "tailwindcss",
       "materialui",
-      "ant design",
+      "framer motion",
+      "antdesign",
+      "chakraui",
       "jest",
+      "mocha",
+      "chai",
+      "supertest",
       "redux",
     ],
     techStack: [
@@ -86,6 +105,10 @@ export const info = {
   },
   hobbies: [
     {
+      label: "lifelong learner",
+      emoji: "🌱",
+    },
+    {
       label: "road trips",
       emoji: "🏔️",
     },
@@ -94,7 +117,7 @@ export const info = {
       emoji: "🏖",
     },
     {
-      label: "movies",
+      label: "true crime",
       emoji: "🎥",
     },
     {
@@ -104,34 +127,47 @@ export const info = {
   ],
   portfolio: [
     {
-      title: "Vital Visit App",
+      title: "🥼 Vital Visit Dr App",
       live: "https://vitalvisit-doctors-app.vercel.app/",
       source: "https://github.com/Mishismail/vitalvisit-doctors-app",
       image: mock4,
+      techStack: ["React", "Ant Design", "Node", "Express", "MongoDB", "Vercel"],
     },
     {
-      title: "Lexi Creative Assistant",
+      title: "🤖 Lexi Creative AI Assist",
       live: "https://lexi-assist.netlify.app/",
       source: "https://github.com/Mishismail/lexi-creative-assist",
       image: mock5,
+      techStack: ["React", "Framer Motion", "Chakra UI", "Gemini AI API", "Netlify"],
     },
     {
-      title: "Quiz Wizz",
+      title: "🎧 iTunes Search",
+      live: "https://itunes-search-rho.vercel.app/",
+      source: "https://github.com/Mishismail/itunes-search",
+      image: mock6,
+      techStack: ["React", "Express", "iTunes API", "Vercel"],
+    },
+    {
+      title: "💭 Quiz Wizz",
       live: "https://quiz-wizz.netlify.app/",
       source: "https://github.com/Mishismail/quiz-app",
       image: mock2,
+      techStack: ["React", "Redux", "CSS", "Netlify"],
     },
     {
-      title: "Weather App",
-      live: "https://mishweatherapp.netlify.app/",
-      source: "https://github.com/Mishismail/react-weather-app",
-      image: mock1,
-    },
-    {
-      title: "Alarm Clock",
+      title: "⏰ Alarm Clock",
       live: "https://digital-clock-mu-swart.vercel.app/",
       source: "https://github.com/Mishismail/digital-clock",
       image: mock3,
+      techStack: ["JavaScript", "CSS", "HTML", "Vercel"],
+    },
+    {
+      title: "🌡️ Weather App",
+      live: "https://mishweatherapp.netlify.app/",
+      source: "https://github.com/Mishismail/react-weather-app",
+      image: mock1,
+      techStack: ["React", "Axios", "Weather API", "Netlify"],
     },
   ],
 };
+

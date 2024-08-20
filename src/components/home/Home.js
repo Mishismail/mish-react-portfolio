@@ -16,12 +16,25 @@ export default function Home({innerRef}) {
               height={{xs: '35vh', md: '40vh'}}
               borderRadius={'50%'} p={'0.75rem'} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}}/>
          <Box>
-            <h1>Hi, I'm <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{info.firstName}</span><span className={Style.hand}>🤚</span>
+            <h1>Hi, I'm <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{info.firstName}</span><span className={Style.hand}>👋🏽</span>
             </h1>
             <h2>{info.position}</h2>
             <Box component={'ul'} p={'0.8rem'}>
                {info.miniBio.map((bio, index) => (
-                  <EmojiBullet key={index} emoji={bio.emoji} text={bio.text}/>
+                  bio.link ? (
+                     <li key={index}>
+                        <EmojiBullet emoji={bio.emoji} text={
+                           <>
+                              {bio.textBeforeLink}
+                              <a href={bio.link} target="_blank" rel="noopener noreferrer" className={Style.resumeLink}>
+                                 {bio.linkText}
+                              </a>
+                           </>
+                        }/>
+                     </li>
+                  ) : (
+                     <EmojiBullet key={index} emoji={bio.emoji} text={bio.text}/>
+                  )
                ))}
             </Box>
             <Box display={'flex'} gap={'1.5rem'} fontSize={{xs: '2rem', md: '2.5rem'}}>
@@ -33,3 +46,6 @@ export default function Home({innerRef}) {
       </Box>
    )
 }
+
+
+
